@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+div {
+	border: 1px solid;
+	padding: 5px;
+	margin: 5pX;
+}
+
+.relative{
+	position: relative;
+	left: 80px;
+}
+
+.fixed{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background-color:chartreuse
+}
+
+.absolute{
+	position: absolute;
+	left: 50px;
+}
+
+.sticky{
+	position: sticky;
+	top: 0px;
+	background-color: blue;
+	width: 300px;
+	height: 200px;
+}
+
+.nav{
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+	background-color: aqua
+}
