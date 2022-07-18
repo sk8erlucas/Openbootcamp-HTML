@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contenedor p {
+	color: darkmagenta;
+}
+
+.contenedor .resaltar {
+	font-weight: bolder;
+}
+
+.contenedor p a {
+	background-color: chocolate
+}

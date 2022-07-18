@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#boton{
+	width: 100px;
+	height: 40px;
+}
+
+#boton::before{
+	content: "Pasa por encima";
+}
+
+#boton:hover::before{
+	color: white;
+	background-color: green;
+	content: "¡Hecho!";
+}

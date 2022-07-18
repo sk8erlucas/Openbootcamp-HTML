@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contenedor{
+	width: 300px;
+	height: 100px;
+	background-color: aqua;
+}
+
+.frase {
+	color: aliceblue;
+	font-size: 25px;
+}
+
+.contenedor .frase span::before {
+	content: '" ';
+}
+
+.contenedor .frase span::after {
+	content: '. "';
+}
+
+.cuentos p::first-letter {
+	font-size: 50px;
+}
+
+.cuentos p::selection{
+	background-color: chocolate;
+	color: aliceblue;
+}
