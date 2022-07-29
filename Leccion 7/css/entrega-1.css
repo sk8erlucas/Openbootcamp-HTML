@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+html {
+	background-color: #161717;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+	gap: 20px;
+	width: 450px;
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+
+#customBtn:hover {
+  cursor: pointer;
+}
+
+span .icon {
+  background: url('https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  color:black;
+}
+
+.twitter-btn {
+	color: #bbb;
+	background-color: #eee;
+	border:none;
+	width: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.twitter-btn:hover{
+	background-color: #bbe;
+}
+
+.separator {
+	display: flex;
+	width: 100%;
+	gap: 15px;
+}
+
+.separator hr {
+	flex-grow: 1;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+.separator span {
+	color:grey;
+}
+
+.section-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 20px;
+}
+
+label {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+label input {
+	width: 100%;
+	font-size: 14px;
+}
+
+label span {
+	font-weight: 700;	
+}
+
+input {
+	background-color: #212121;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	outline: none;
+	
+	transition:
+		background-color 0.5s,
+		border 0.2s,
+		box-shadow 0.2s;
+	
+}
+
+label input:hover{
+	background-color: white;
+	border: solid 1px #454045;
+	box-shadow: 0 0 4px #eb50ff4f;
+	
+}
+
+label input:focus{
+	background-color: white;
+	border: solid 1px #f3f3f4;
+	box-shadow: 0 0 4px #eb50ff4f;
+}
+
+#checkbox input[type="checkbox"] {
+	width: 20px;
+}
+
+#checkbox span {
+	font-weight: 400;
+}
+
+.submit-btn {
+	background-color: #ea4c89;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 14pt;
+	cursor:pointer;
+}
+
+.submit-btn:hover {
+	opacity: 0.75;
+}	

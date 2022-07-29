@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.input {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.input[type="password"] {
+	color: red;
+}
+
+.input-moderno {
+	border:none;
+	border-bottom: 1px solid grey;
+	outline: none;
+	color: grey;
+	padding: 5px;
+}
+
+.input-moderno:focus {
+	border-bottom:  1px solid red;
+}
+
+.input-moderno::placeholder {
+	color: chocolate;
+}
+
+.input-background {
+	background-color: aquamarine;
+	border: none;
+	color: white;
+	box-shadow: 0 0 10px #ccc;
+}
+
+.input-background::placeholder {
+	color: white;
+}
+
+.input-search {
+	padding: 10px;
+	border: none;
+	background-color: #ddd;
+	border-radius: 10px;
+}
+
+.textarea {
+	resize: vertical;
+}
+
+select {
+	width: 100%;
+	background-color: darkgrey;
+	color: white;
+}
