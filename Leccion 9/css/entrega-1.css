@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn-modern {
+	background-color: blue;
+	color: white;
+	border: none;
+	width: 100px;
+	height: 30px;
+	
+}
+
+.btn-modern:hover{
+	
+	animation: anim 0.4s forwards;
+	cursor: pointer;
+	
+}
+
+@keyframes anim {
+	0% {
+		transform: translatey(0px);
+	}
+	
+	100% {
+		transform: translatey(-5px);
+		box-shadow: 5px 5px 0 #000;
+		background-color: aquamarine;
+		color: burlywood;
+	}
+}
