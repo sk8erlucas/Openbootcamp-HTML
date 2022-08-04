@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	align-content: stretch;
+}
+
+.lateralizquierda {
+	background-color: aqua;
+	width: 30%;
+}
+
+.principal {
+	background-color: red;
+	width: 70%;
+}
+
+@media (max-width: 640px) {
+	
+	.lateralizquierda {
+		flex-direction: column;
+	}
+	
+	
+}
+	
