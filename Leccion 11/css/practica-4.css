@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--main-bg-color: rgb(195, 0, 190);
+}
+
+.contenedor {
+	display: grid;
+	/*gap: 0.5rem;
+	grid-row-gap: 1rem;
+	column-gap: 0.5rem;*/
+	
+	/*grid-template-columns: repeat(3, auto);*/
+	/*grid-template-columns: 30vw 60vw 10vw;*/
+	/*grid-template-columns: 1fr 1fr 2fr;*/
+	
+	grid-template-columns: auto auto 20% auto 10%;
+}
+
+.item {
+	padding: 0.25rem;
+	color: white;
+	font-size: 1.5rem;
+	border: solid blue 1px;
+	
+	background-color: var(--main-bg-color);
+}
+
+.item1 {
+	background-color: #9F4648;
+}
+
+.item2 {
+	background-color: #9F4648;
+}
+
+.item3 {
+	background-color: #9F4648;
+}
+
+.item4 {
+	background-color: #9F4648;
+}
+.item5 {
+	background-color: #9F4648;
+}
