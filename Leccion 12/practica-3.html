@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jumbotron y alertas</title>
+	
+	<link href="css/practica-3.css" type="text/css">
+	
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	
+	<div class="container py-4">
+		
+	  <div class="row mb-4">
+			<h1>Tipografías <small class="h1 text-muted">para toda la familia</small></h1>
+			
+			<h2 class="mt-2 display-2 text-center">Tipografías</h2>
+			
+			<h3 class="mt-4">Tipografías</h3>
+			<h4 class="mt-4 text-end text-sm-center">Tipografías</h4>
+			
+		  	<figure class="border-1 mt-4">
+			  <blockquote class="blockquote">
+				<p>A well-known quote, contained in a blockquote element.</p>
+			  </blockquote>
+			  <figcaption class="blockquote-footer">
+				Someone famous in <cite title="Source Title">Source Title</cite>
+			  </figcaption>
+			</figure>
+		  
+		  	<dl class="row">
+			  <dt class="col-sm-3">Description lists</dt>
+			  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+			  <dt class="col-sm-3">Term</dt>
+			  <dd class="col-sm-9">
+				<p>Definition for the term.</p>
+				<p>And some more placeholder definition text.</p>
+			  </dd>
+
+			  <dt class="col-sm-3">Another term</dt>
+			  <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+			  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+			  <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+			  <dt class="col-sm-3">Nesting</dt>
+			  <dd class="col-sm-9">
+				<dl class="row">
+				  <dt class="col-sm-4">Nested definition list</dt>
+				  <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+				</dl>
+			  </dd>
+			</dl>
+		  
+			<p class="mt-2 lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.</p>
+			
+		<p class="mt-2">Sed ut perspiciatis unde omnis iste natus <mark>error</mark> sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <strong>inventore</strong> veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem <abbr title="Estados Unidos" class="initialism">USA</abbr> quia voluptas sit aspernatur aut odit aut fugit, <em>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</em> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		</div>
+		
+		<div class="spinner-border spinner-border-sm text-info mt-4" role="status">
+  			<span class="visually-hidden">Loading...</span>
+		</div>
+		
+		<div class="alert alert-warning alert-dismissible fade show" role="alert" id="alerta">
+		  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+		  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		
+		<div id="liveAlertPlaceholder"></div>
+		
+		<header class="pb-3 mb-4 border-bottom">
+      		<a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        	<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+        	<span class="fs-4">Jumbotron example</span>
+      		</a>
+    	</header>
+
+		<div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+  			<path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+			</svg>
+		  
+        <h1 class="display-5 fw-bold">Cursos de html y css</h1>
+        <p class="col-md-8 fs-4">HTML permite estructurar el esqueleto de un sitio web, es decir sirve para definir si el contenido de un sitio web va a ser por ejemplo un encabezado, un párrafo o una imagen. HTML más que un lenguaje de programación, es un formato que sirve de base a múltiples soluciones.</p>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+		  
+		<button type="button" class="btn btn-danger" data-bs-dismiss="alert" data-bs-target="#alerta">Eliminar alertas</button>
+		  
+      </div>
+    </div>
+		
+		<div class="progress">
+		  <div class="progress-bar bg-info" role="progressbar" aria-label="Example with label" style="width: 48%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Almost there</div>
+		</div>
+		
+		<div class="progress mt-5">
+		  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Casi es navidad</div>
+		</div>
+	</div>
+	
+	
+	<script>
+		const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+		const alert = (message, type) => {
+		  const wrapper = document.createElement('div')
+		  wrapper.innerHTML = [
+			`<div class="alert alert-${type} alert-dismissible" role="alert">`,
+			`   <div>${message}</div>`,
+			'   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+			'</div>'
+		  ].join('')
+
+		  alertPlaceholder.append(wrapper)
+		}
+
+		const alertTrigger = document.getElementById('liveAlertBtn')
+		if (alertTrigger) {
+		  alertTrigger.addEventListener('click', () => {
+			alert('Nice, you triggered this alert message!', 'success')
+		  })
+		}
+	
+	</script>
+	
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+	
+</html>
